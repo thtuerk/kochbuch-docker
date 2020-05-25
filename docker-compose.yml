@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    kochbuch:
+        image: kochbuch
+        restart: always
+        ports:
+            - 8300:80
+
+        volumes:
+            - ./kochbuch:/var/www/html
+
